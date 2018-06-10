@@ -124,6 +124,9 @@ msgstr "啟用 SYN-flood 防禦"
 msgid "Enable logging on this zone"
 msgstr "啟用此區域的日誌記錄"
 
+msgid "Experimental feature. Not fully compatible with QoS/SQM."
+msgstr ""
+
 msgid "External IP address"
 msgstr "外部 IP 位址"
 
@@ -174,6 +177,9 @@ msgstr "來自 %s 位於 %s 源埠 %s 源 MAC %s"
 
 msgid "General Settings"
 msgstr "基本設定"
+
+msgid "Hardware flow offloading"
+msgstr ""
 
 msgid "IP"
 msgstr ""
@@ -295,6 +301,9 @@ msgstr "其它..."
 msgid "Output"
 msgstr "出站資料"
 
+msgid "Output zone"
+msgstr ""
+
 msgid "Passes additional arguments to iptables. Use with care!"
 msgstr "傳遞到 iptables 的額外引數。小心使用！"
 
@@ -320,6 +329,9 @@ msgid "Refuse forward"
 msgstr ""
 
 msgid "Refuse input"
+msgstr ""
+
+msgid "Requires hardware NAT support. Implemented at least for mt7621"
 msgstr ""
 
 msgid "Restart Firewall"
@@ -348,6 +360,9 @@ msgstr "源位址改寫成 %s"
 msgid "Rewrite to source %s, %s"
 msgstr "源位址改寫成 %s, %s"
 
+msgid "Routing/NAT Offloading"
+msgstr ""
+
 msgid "Rule is disabled"
 msgstr ""
 
@@ -362,6 +377,12 @@ msgstr "SNAT 埠"
 
 msgid "Saturday"
 msgstr "星期六"
+
+msgid "Software based offloading for routing/NAT"
+msgstr ""
+
+msgid "Software flow offloading"
+msgstr ""
 
 msgid "Source IP address"
 msgstr "源 IP 位址"

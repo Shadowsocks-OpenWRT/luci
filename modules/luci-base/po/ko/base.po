@@ -49,6 +49,9 @@ msgstr ""
 msgid "-- match by uuid --"
 msgstr ""
 
+msgid "-- please select --"
+msgstr ""
+
 msgid "1 Minute Load:"
 msgstr "1 분 부하:"
 
@@ -168,9 +171,6 @@ msgstr ""
 msgid "ADSL"
 msgstr ""
 
-msgid "AICCU (SIXXS)"
-msgstr ""
-
 msgid "ANSI T1.413"
 msgstr ""
 
@@ -202,9 +202,6 @@ msgid "ATM device number"
 msgstr ""
 
 msgid "ATU-C System Vendor ID"
-msgstr ""
-
-msgid "AYIYA"
 msgstr ""
 
 msgid "Access Concentrator"
@@ -311,11 +308,6 @@ msgstr ""
 msgid "Allowed IPs"
 msgstr ""
 
-msgid ""
-"Also see <a href=\"https://www.sixxs.net/faq/connectivity/?faq=comparison"
-"\">Tunneling Comparison</a> on SIXXS"
-msgstr ""
-
 msgid "Always announce default router"
 msgstr ""
 
@@ -394,10 +386,13 @@ msgstr ""
 msgid "Any zone"
 msgstr ""
 
-msgid "Apply"
-msgstr "적용"
+msgid "Apply request failed with status <code>%h</code>"
+msgstr ""
 
-msgid "Applying changes"
+msgid "Apply unchecked"
+msgstr ""
+
+msgid "Architecture"
 msgstr ""
 
 msgid ""
@@ -413,6 +408,9 @@ msgstr ""
 
 msgid "Associated Stations"
 msgstr "연결된 station 들"
+
+msgid "Associations"
+msgstr ""
 
 msgid "Auth Group"
 msgstr ""
@@ -504,9 +502,6 @@ msgstr ""
 msgid "Band"
 msgstr ""
 
-msgid "Behind NAT"
-msgstr ""
-
 msgid ""
 "Below is the determined list of files to backup. It consists of changed "
 "configuration files marked by opkg, essential base files and the user "
@@ -580,10 +575,18 @@ msgstr "변경 사항"
 msgid "Changes applied."
 msgstr ""
 
+msgid "Changes have been reverted."
+msgstr ""
+
 msgid "Changes the administrator password for accessing the device"
 msgstr "장비 접근을 위한 관리자 암호를 변경합니다"
 
 msgid "Channel"
+msgstr ""
+
+msgid ""
+"Channel %d is not available in the %s regulatory domain and has been auto-"
+"adjusted to %d."
 msgstr ""
 
 msgid "Check"
@@ -664,10 +667,13 @@ msgstr ""
 msgid "Configuration"
 msgstr "설정"
 
-msgid "Configuration applied."
+msgid "Configuration files will be kept."
 msgstr ""
 
-msgid "Configuration files will be kept."
+msgid "Configuration has been applied."
+msgstr ""
+
+msgid "Configuration has been rolled back!"
 msgstr ""
 
 msgid "Confirmation"
@@ -682,11 +688,14 @@ msgstr "연결 시간"
 msgid "Connection Limit"
 msgstr ""
 
-msgid "Connection to server fails when TLS cannot be used"
-msgstr ""
-
 msgid "Connections"
 msgstr "연결"
+
+msgid ""
+"Could not regain access to the device after applying the configuration "
+"changes. You might need to reconnect if you modified network related "
+"settings such as the IP address or wireless security credentials."
+msgstr ""
 
 msgid "Country"
 msgstr ""
@@ -730,6 +739,11 @@ msgstr ""
 
 msgid "Custom feeds"
 msgstr "Custom feed 들"
+
+msgid ""
+"Custom files (certificates, scripts) may remain on the system. To prevent "
+"this, perform a factory-reset first."
+msgstr ""
 
 msgid ""
 "Customizes the behaviour of the device <abbr title=\"Light Emitting Diode"
@@ -813,9 +827,6 @@ msgstr ""
 msgid "Default is stateless + stateful"
 msgstr ""
 
-msgid "Default route"
-msgstr ""
-
 msgid "Default state"
 msgstr "기본 상태"
 
@@ -858,6 +869,9 @@ msgstr ""
 msgid "Device unreachable"
 msgstr ""
 
+msgid "Device unreachable!"
+msgstr ""
+
 msgid "Diagnostics"
 msgstr "진단"
 
@@ -890,6 +904,9 @@ msgid "Disabled (default)"
 msgstr ""
 
 msgid "Discard upstream RFC1918 responses"
+msgstr ""
+
+msgid "Dismiss"
 msgstr ""
 
 msgid "Displaying only packages containing"
@@ -1001,6 +1018,11 @@ msgstr ""
 msgid "Enable"
 msgstr "활성화"
 
+msgid ""
+"Enable <abbr title=\"Internet Group Management Protocol\">IGMP</abbr> "
+"snooping"
+msgstr ""
+
 msgid "Enable <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgstr "<abbr title=\"Spanning Tree Protocol\">STP</abbr> 활성화"
 
@@ -1057,6 +1079,9 @@ msgstr "활성/비활성"
 
 msgid "Enabled"
 msgstr "활성화됨"
+
+msgid "Enables IGMP snooping on this bridge"
+msgstr ""
 
 msgid ""
 "Enables fast roaming among access points that belong to the same Mobility "
@@ -1134,6 +1159,9 @@ msgid "FT over the Air"
 msgstr ""
 
 msgid "FT protocol"
+msgstr ""
+
+msgid "Failed to confirm apply within %ds, waiting for rollback…"
 msgstr ""
 
 msgid "File"
@@ -1329,9 +1357,6 @@ msgstr ""
 msgid "Header Error Code Errors (HEC)"
 msgstr ""
 
-msgid "Heartbeat"
-msgstr ""
-
 msgid ""
 "Here you can configure the basic aspects of your device like its hostname or "
 "the timezone."
@@ -1390,8 +1415,8 @@ msgstr ""
 msgid "IPv4 Firewall"
 msgstr "IPv4 방화벽"
 
-msgid "IPv4 WAN Status"
-msgstr "IPv4 WAN 상태"
+msgid "IPv4 Upstream"
+msgstr ""
 
 msgid "IPv4 address"
 msgstr "IPv4 주소"
@@ -1441,13 +1466,10 @@ msgstr "IPv6 설정"
 msgid "IPv6 ULA-Prefix"
 msgstr ""
 
-msgid "IPv6 WAN Status"
-msgstr "IPv6 WAN 상태"
-
-msgid "IPv6 address"
+msgid "IPv6 Upstream"
 msgstr ""
 
-msgid "IPv6 address delegated to the local tunnel endpoint (optional)"
+msgid "IPv6 address"
 msgstr ""
 
 msgid "IPv6 assignment hint"
@@ -2017,9 +2039,6 @@ msgstr ""
 msgid "NTP server candidates"
 msgstr "NTP 서버 목록"
 
-msgid "NTP sync time-out"
-msgstr ""
-
 msgid "Name"
 msgstr "이름"
 
@@ -2128,6 +2147,9 @@ msgstr ""
 msgid "Nslookup"
 msgstr ""
 
+msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
+msgstr ""
+
 msgid "OK"
 msgstr ""
 
@@ -2138,6 +2160,9 @@ msgid "Obfuscated Group Password"
 msgstr ""
 
 msgid "Obfuscated Password"
+msgstr ""
+
+msgid "Obtain IPv6-Address"
 msgstr ""
 
 msgid "Off-State Delay"
@@ -2189,12 +2214,6 @@ msgid "Option removed"
 msgstr "삭제된 option"
 
 msgid "Optional"
-msgstr ""
-
-msgid "Optional, specify to override default server (tic.sixxs.net)"
-msgstr ""
-
-msgid "Optional, use when the SIXXS account has more than one tunnel"
 msgstr ""
 
 msgid ""
@@ -2550,12 +2569,12 @@ msgstr ""
 "Configuration Protocol\">DHCP</abbr>-서버를 설정합니다"
 
 msgid ""
-"Really delete this interface? The deletion cannot be undone!\\nYou might "
-"lose access to this device if you are connected via this interface."
+"Really delete this interface? The deletion cannot be undone! You might lose "
+"access to this device if you are connected via this interface."
 msgstr ""
 
 msgid ""
-"Really delete this wireless network? The deletion cannot be undone!\\nYou "
+"Really delete this wireless network? The deletion cannot be undone! You "
 "might lose access to this device if you are connected via this network."
 msgstr ""
 
@@ -2563,14 +2582,14 @@ msgid "Really reset all changes?"
 msgstr ""
 
 msgid ""
-"Really shut down network?\\nYou might lose access to this device if you are "
+"Really shut down network? You might lose access to this device if you are "
 "connected via this interface."
 msgstr ""
 "정말로 네트워크를 shutdown 하시겠습니까?\\n이 인터페이스를 통해 연결하였다면 "
 "접속이 끊어질 수 있습니다."
 
 msgid ""
-"Really shutdown interface \"%s\" ?\\nYou might lose access to this device if "
+"Really shutdown interface \"%s\"? You might lose access to this device if "
 "you are connected via this interface."
 msgstr ""
 
@@ -2661,9 +2680,6 @@ msgstr ""
 msgid "Request IPv6-prefix of length"
 msgstr ""
 
-msgid "Require TLS"
-msgstr ""
-
 msgid "Required"
 msgstr ""
 
@@ -2722,6 +2738,15 @@ msgstr "암호 보이기/숨기기"
 msgid "Revert"
 msgstr "변경 취소"
 
+msgid "Revert changes"
+msgstr ""
+
+msgid "Revert request failed with status <code>%h</code>"
+msgstr ""
+
+msgid "Reverting configuration…"
+msgstr ""
+
 msgid "Root"
 msgstr ""
 
@@ -2735,9 +2760,6 @@ msgid "Route Allowed IPs"
 msgstr ""
 
 msgid "Route type"
-msgstr ""
-
-msgid "Routed IPv6 prefix for downstream interfaces"
 msgstr ""
 
 msgid "Router Advertisement-Service"
@@ -2763,14 +2785,6 @@ msgid "Run filesystem check"
 msgstr ""
 
 msgid "SHA256"
-msgstr ""
-
-msgid ""
-"SIXXS supports TIC only, for static tunnels using IP protocol 41 (RFC4213) "
-"use 6in4 instead"
-msgstr ""
-
-msgid "SIXXS-handle[/Tunnel-ID]"
 msgstr ""
 
 msgid "SNR"
@@ -2800,9 +2814,6 @@ msgstr "저장"
 msgid "Save & Apply"
 msgstr "저장 & 적용"
 
-msgid "Save &#38; Apply"
-msgstr "저장 &#38; 적용"
-
 msgid "Scan"
 msgstr "Scan 하기"
 
@@ -2828,17 +2839,6 @@ msgstr ""
 
 msgid "Server Settings"
 msgstr "서버 설정"
-
-msgid "Server password"
-msgstr ""
-
-msgid ""
-"Server password, enter the specific password of the tunnel when the username "
-"contains the tunnel ID"
-msgstr ""
-
-msgid "Server username"
-msgstr ""
 
 msgid "Service Name"
 msgstr ""
@@ -2890,6 +2890,9 @@ msgstr "Size"
 msgid "Size (.ipk)"
 msgstr "크기 (.ipk)"
 
+msgid "Size of DNS query cache"
+msgstr ""
+
 msgid "Skip"
 msgstr ""
 
@@ -2929,9 +2932,6 @@ msgstr "순서"
 msgid "Source"
 msgstr ""
 
-msgid "Source routing"
-msgstr ""
-
 msgid "Specifies the directory the device is attached to"
 msgstr ""
 
@@ -2969,6 +2969,9 @@ msgstr "시작"
 
 msgid "Start priority"
 msgstr "시작 우선순위"
+
+msgid "Starting configuration apply…"
+msgstr ""
 
 msgid "Startup"
 msgstr "시작 프로그램"
@@ -3128,6 +3131,16 @@ msgid "The configuration file could not be loaded due to the following error:"
 msgstr ""
 
 msgid ""
+"The device could not be reached within %d seconds after applying the pending "
+"changes, which caused the configuration to be rolled back for safety "
+"reasons. If you believe that the configuration changes are correct "
+"nonetheless, perform an unchecked configuration apply. Alternatively, you "
+"can dismiss this warning and edit changes before attempting to apply again, "
+"or revert all pending changes to keep the currently working configuration "
+"state."
+msgstr ""
+
+msgid ""
 "The device file of the memory or partition (<abbr title=\"for example\">e.g."
 "</abbr> <code>/dev/sda1</code>)"
 msgstr ""
@@ -3142,9 +3155,6 @@ msgid ""
 "The flash image was uploaded. Below is the checksum and file size listed, "
 "compare them with the original file to ensure data integrity.<br /> Click "
 "\"Proceed\" below to start the flash procedure."
-msgstr ""
-
-msgid "The following changes have been committed"
 msgstr ""
 
 msgid "The following changes have been reverted"
@@ -3205,11 +3215,6 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The tunnel end-point is behind NAT, defaults to disabled and only applies to "
-"AYIYA"
-msgstr ""
-
-msgid ""
 "The uploaded image file does not contain a supported format. Make sure that "
 "you choose the generic image format for your platform."
 msgstr ""
@@ -3217,7 +3222,7 @@ msgstr ""
 msgid "There are no active leases."
 msgstr ""
 
-msgid "There are no pending changes to apply!"
+msgid "There are no changes to apply."
 msgstr ""
 
 msgid "There are no pending changes to revert!"
@@ -3270,7 +3275,7 @@ msgstr ""
 
 msgid ""
 "This is the local endpoint address assigned by the tunnel broker, it usually "
-"ends with <code>:2</code>"
+"ends with <code>...:2/64</code>"
 msgstr ""
 
 msgid ""
@@ -3360,15 +3365,6 @@ msgid "Tunnel Interface"
 msgstr ""
 
 msgid "Tunnel Link"
-msgstr ""
-
-msgid "Tunnel broker protocol"
-msgstr ""
-
-msgid "Tunnel setup server"
-msgstr ""
-
-msgid "Tunnel type"
 msgstr ""
 
 msgid "Tx-Power"
@@ -3484,7 +3480,7 @@ msgstr "Routing table 사용"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"em> identifies the host, the <em>IPv4-Address</em> specifies the fixed "
 "address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
 "the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
@@ -3551,12 +3547,6 @@ msgstr ""
 msgid "Vendor Class to send when requesting DHCP"
 msgstr "DHCP 요청시 전송할 Vendor Class"
 
-msgid "Verbose"
-msgstr ""
-
-msgid "Verbose logging by aiccu daemon"
-msgstr ""
-
 msgid "Verify"
 msgstr ""
 
@@ -3586,15 +3576,14 @@ msgid ""
 "and ad-hoc mode) to be installed."
 msgstr ""
 
-msgid ""
-"Wait for NTP sync that many seconds, seting to 0 disables waiting (optional)"
-msgstr ""
-
 msgid "Waiting for changes to be applied..."
 msgstr "변경 사항이 적용되기를 기다리는 중입니다..."
 
 msgid "Waiting for command to complete..."
 msgstr "실행한 명령이 끝나기를 기다리는 중입니다..."
+
+msgid "Waiting for configuration to get applied… %ds"
+msgstr ""
 
 msgid "Waiting for device..."
 msgstr ""
@@ -3608,12 +3597,6 @@ msgstr ""
 msgid ""
 "When using a PSK, the PMK can be generated locally without inter AP "
 "communications"
-msgstr ""
-
-msgid "Whether to create an IPv6 default route over the tunnel"
-msgstr ""
-
-msgid "Whether to route only packets from delegated prefixes"
 msgstr ""
 
 msgid "Width"
@@ -3693,6 +3676,9 @@ msgstr ""
 msgid "bridged"
 msgstr ""
 
+msgid "create"
+msgstr ""
+
 msgid "create:"
 msgstr ""
 
@@ -3757,9 +3743,6 @@ msgstr ""
 msgid "local <abbr title=\"Domain Name System\">DNS</abbr> file"
 msgstr "local <abbr title=\"Domain Name System\">DNS</abbr> 파일"
 
-msgid "minimum 1280, maximum 1480"
-msgstr ""
-
 msgid "minutes"
 msgstr ""
 
@@ -3782,6 +3765,9 @@ msgid "on"
 msgstr ""
 
 msgid "open"
+msgstr ""
+
+msgid "output"
 msgstr ""
 
 msgid "overlay"
@@ -3834,6 +3820,18 @@ msgstr ""
 
 msgid "« Back"
 msgstr ""
+
+#~ msgid "IPv4 WAN Status"
+#~ msgstr "IPv4 WAN 상태"
+
+#~ msgid "IPv6 WAN Status"
+#~ msgstr "IPv6 WAN 상태"
+
+#~ msgid "Apply"
+#~ msgstr "적용"
+
+#~ msgid "Save &#38; Apply"
+#~ msgstr "저장 &#38; 적용"
 
 #~ msgid "Leasetime"
 #~ msgstr "임대 시간"

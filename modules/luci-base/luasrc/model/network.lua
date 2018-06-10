@@ -629,7 +629,7 @@ function get_interface(self, i)
 	if _interfaces[i] or _wifi_iface(i) then
 		return interface(i)
 	else
-		local netid = _wifi_netid_by_netname(i)
+		local netid = _wifi_netid_by_sid(i)
 		return netid and interface(netid)
 	end
 end
@@ -1273,7 +1273,7 @@ function interface.get_i18n(self)
 		return "%s: %s %q" %{
 			lng.translate("Wireless Network"),
 			self.wif:active_mode(),
-			self.wif:active_ssid() or self.wif:active_bssid() or self.wif:id()
+			self.wif:active_ssid() or self.wif:active_bssid() or self.wif:id() or "?"
 		}
 	else
 		return "%s: %q" %{ self:get_type_i18n(), self:name() }
@@ -1428,7 +1428,7 @@ function wifidev.hwmodes(self)
 end
 
 function wifidev.get_i18n(self)
-	local t = "Generic"
+	local t = self.iwinfo.hardware_name or "Generic"
 	if self.iwinfo.type == "wl" then
 		t = "Broadcom"
 	end

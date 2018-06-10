@@ -39,6 +39,9 @@ msgstr "-- 根据标签匹配 --"
 msgid "-- match by uuid --"
 msgstr "-- 根据 UUID 匹配 --"
 
+msgid "-- please select --"
+msgstr ""
+
 msgid "1 Minute Load:"
 msgstr "1 分钟负载："
 
@@ -162,9 +165,6 @@ msgstr "A43C + J43 + A43 + V43"
 msgid "ADSL"
 msgstr "ADSL"
 
-msgid "AICCU (SIXXS)"
-msgstr "AICCU (SIXXS)"
-
 msgid "ANSI T1.413"
 msgstr "ANSI T1.413"
 
@@ -199,9 +199,6 @@ msgstr "ATM 设备号码"
 
 msgid "ATU-C System Vendor ID"
 msgstr "ATU-C 系统供应商 ID"
-
-msgid "AYIYA"
-msgstr "AYIYA"
 
 msgid "Access Concentrator"
 msgstr "接入集中器"
@@ -305,13 +302,6 @@ msgstr "允许 127.0.0.0/8 回环范围内的上行响应，例如：RBL 服务"
 msgid "Allowed IPs"
 msgstr "允许的 IP"
 
-msgid ""
-"Also see <a href=\"https://www.sixxs.net/faq/connectivity/?faq=comparison"
-"\">Tunneling Comparison</a> on SIXXS"
-msgstr ""
-"也请查看 SIXXS 上的<a href=\"https://www.sixxs.net/faq/connectivity/?"
-"faq=comparison\">隧道对比</a>"
-
 msgid "Always announce default router"
 msgstr "总是通告默认路由"
 
@@ -390,11 +380,14 @@ msgstr "天线配置"
 msgid "Any zone"
 msgstr "任意区域"
 
-msgid "Apply"
-msgstr "应用"
+msgid "Apply request failed with status <code>%h</code>"
+msgstr "应用请求失败，状态 <code>%h</code>"
 
-msgid "Applying changes"
-msgstr "正在应用更改"
+msgid "Apply unchecked"
+msgstr "应用未选中"
+
+msgid "Architecture"
+msgstr "架构"
 
 msgid ""
 "Assign a part of given length of every public IPv6-prefix to this interface"
@@ -409,6 +402,9 @@ msgstr "将此十六进制子 ID 前缀分配给此接口"
 
 msgid "Associated Stations"
 msgstr "已连接站点"
+
+msgid "Associations"
+msgstr "关联数"
 
 msgid "Auth Group"
 msgstr "认证组"
@@ -500,9 +496,6 @@ msgstr "指定了错误的地址！"
 msgid "Band"
 msgstr "频宽"
 
-msgid "Behind NAT"
-msgstr "在 NAT 网络内"
-
 msgid ""
 "Below is the determined list of files to backup. It consists of changed "
 "configuration files marked by opkg, essential base files and the user "
@@ -571,13 +564,21 @@ msgid "Changes"
 msgstr "修改数"
 
 msgid "Changes applied."
-msgstr "更改已应用"
+msgstr "更改已应用。"
+
+msgid "Changes have been reverted."
+msgstr "更改已取消。"
 
 msgid "Changes the administrator password for accessing the device"
 msgstr "修改访问设备的管理员密码"
 
 msgid "Channel"
 msgstr "信道"
+
+msgid ""
+"Channel %d is not available in the %s regulatory domain and has been auto-"
+"adjusted to %d."
+msgstr "信道 %d 在 %s 监管区域内不可用并已自动调整到 %d。"
 
 msgid "Check"
 msgstr "检查"
@@ -655,11 +656,14 @@ msgstr ""
 msgid "Configuration"
 msgstr "配置"
 
-msgid "Configuration applied."
-msgstr "配置已应用。"
-
 msgid "Configuration files will be kept."
 msgstr "配置文件将被保留。"
+
+msgid "Configuration has been applied."
+msgstr "配置已应用。"
+
+msgid "Configuration has been rolled back!"
+msgstr "配置已回滚！"
 
 msgid "Confirmation"
 msgstr "确认密码"
@@ -673,11 +677,16 @@ msgstr "已连接"
 msgid "Connection Limit"
 msgstr "连接数限制"
 
-msgid "Connection to server fails when TLS cannot be used"
-msgstr "当 TLS 不可用时，与服务器连接失败"
-
 msgid "Connections"
 msgstr "连接"
+
+msgid ""
+"Could not regain access to the device after applying the configuration "
+"changes. You might need to reconnect if you modified network related "
+"settings such as the IP address or wireless security credentials."
+msgstr ""
+"应用配置更改后，无法重新获得对设备的访问权限。如果您修改了网络相关设置"
+"如 IP 地址或无线安全证书，则可能需要重新连接。"
 
 msgid "Country"
 msgstr "国家"
@@ -719,6 +728,12 @@ msgstr "自定义软件源地址，例如：私有的软件源。此文件在系
 
 msgid "Custom feeds"
 msgstr "自定义软件源"
+
+msgid ""
+"Custom files (certificates, scripts) may remain on the system. To prevent "
+"this, perform a factory-reset first."
+msgstr ""
+"自定义文件（证书、脚本）会保留在系统上。若无需保留，请先执行恢复出厂设置。"
 
 msgid ""
 "Customizes the behaviour of the device <abbr title=\"Light Emitting Diode"
@@ -800,9 +815,6 @@ msgstr "默认网关"
 msgid "Default is stateless + stateful"
 msgstr "默认是无状态的 + 有状态的"
 
-msgid "Default route"
-msgstr "默认路由"
-
 msgid "Default state"
 msgstr "默认状态"
 
@@ -844,6 +856,9 @@ msgstr "设备正在重启..."
 msgid "Device unreachable"
 msgstr "无法连接到设备"
 
+msgid "Device unreachable!"
+msgstr "无法连接到设备！"
+
 msgid "Diagnostics"
 msgstr "网络诊断"
 
@@ -877,6 +892,9 @@ msgstr "禁用（默认）"
 
 msgid "Discard upstream RFC1918 responses"
 msgstr "丢弃 RFC1918 上行响应数据"
+
+msgid "Dismiss"
+msgstr "解除"
 
 msgid "Displaying only packages containing"
 msgstr "只显示有内容的软件包"
@@ -987,6 +1005,11 @@ msgstr "紧急"
 msgid "Enable"
 msgstr "启用"
 
+msgid ""
+"Enable <abbr title=\"Internet Group Management Protocol\">IGMP</abbr> "
+"snooping"
+msgstr "启用 <abbr title=\"Internet Group Management Protocol\">IGMP</abbr> 窥探"
+
 msgid "Enable <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 msgstr "开启 <abbr title=\"Spanning Tree Protocol\">STP</abbr>"
 
@@ -1043,6 +1066,9 @@ msgstr "启用/禁用"
 
 msgid "Enabled"
 msgstr "启用"
+
+msgid "Enables IGMP snooping on this bridge"
+msgstr "在此桥接上启用 IGMP 窥探"
 
 msgid ""
 "Enables fast roaming among access points that belong to the same Mobility "
@@ -1121,6 +1147,9 @@ msgstr ""
 
 msgid "FT protocol"
 msgstr "FT 协议"
+
+msgid "Failed to confirm apply within %ds, waiting for rollback…"
+msgstr "在 %d 秒内确认应用失败，等待回滚..."
 
 msgid "File"
 msgstr "文件"
@@ -1317,9 +1346,6 @@ msgstr "挂起"
 msgid "Header Error Code Errors (HEC)"
 msgstr "请求头错误代码错误（HEC）"
 
-msgid "Heartbeat"
-msgstr "心跳"
-
 msgid ""
 "Here you can configure the basic aspects of your device like its hostname or "
 "the timezone."
@@ -1375,8 +1401,8 @@ msgstr "IPv4"
 msgid "IPv4 Firewall"
 msgstr "IPv4 防火墙"
 
-msgid "IPv4 WAN Status"
-msgstr "IPv4 WAN 状态"
+msgid "IPv4 Upstream"
+msgstr "IPv4 上游"
 
 msgid "IPv4 address"
 msgstr "IPv4 地址"
@@ -1426,14 +1452,11 @@ msgstr "IPv6 设置"
 msgid "IPv6 ULA-Prefix"
 msgstr "IPv6 ULA 前缀"
 
-msgid "IPv6 WAN Status"
-msgstr "IPv6 WAN 状态"
+msgid "IPv6 Upstream"
+msgstr "IPv6 上游"
 
 msgid "IPv6 address"
 msgstr "IPv6 地址"
-
-msgid "IPv6 address delegated to the local tunnel endpoint (optional)"
-msgstr "绑定到隧道本端的 IPv6 地址（可选）"
 
 msgid "IPv6 assignment hint"
 msgstr "IPv6 分配提示"
@@ -2016,9 +2039,6 @@ msgstr "NT 域"
 msgid "NTP server candidates"
 msgstr "候选 NTP 服务器"
 
-msgid "NTP sync time-out"
-msgstr "NTP 同步超时"
-
 msgid "Name"
 msgstr "名称"
 
@@ -2127,6 +2147,9 @@ msgstr "注意"
 msgid "Nslookup"
 msgstr "Nslookup"
 
+msgid "Number of cached DNS entries (max is 10000, 0 is no caching)"
+msgstr "缓存的 DNS 条目数量（最大 10000，0 表示不缓存）"
+
 msgid "OK"
 msgstr "确认"
 
@@ -2138,6 +2161,9 @@ msgstr "混淆组密码"
 
 msgid "Obfuscated Password"
 msgstr "混淆密码"
+
+msgid "Obtain IPv6-Address"
+msgstr "获取 IPv6 地址"
 
 msgid "Off-State Delay"
 msgstr "关闭时间"
@@ -2187,12 +2213,6 @@ msgstr "移除的选项"
 
 msgid "Optional"
 msgstr "可选"
-
-msgid "Optional, specify to override default server (tic.sixxs.net)"
-msgstr "可选，设置这个选项会覆盖默认服务器（tic.sixxs.net）"
-
-msgid "Optional, use when the SIXXS account has more than one tunnel"
-msgstr "可选，如果您的 SIXXS 账号拥有一个以上的隧道请设置此项"
 
 msgid ""
 "Optional. 32-bit mark for outgoing encrypted packets. Enter value in hex, "
@@ -2551,13 +2571,13 @@ msgstr ""
 "Configuration Protocol\">DHCP</abbr> 服务器"
 
 msgid ""
-"Really delete this interface? The deletion cannot be undone!\\nYou might "
-"lose access to this device if you are connected via this interface."
+"Really delete this interface? The deletion cannot be undone! You might lose "
+"access to this device if you are connected via this interface."
 msgstr ""
 "确定要删除此接口？删除操作无法撤销！\\n删除此接口，可能导致无法再访问路由器！"
 
 msgid ""
-"Really delete this wireless network? The deletion cannot be undone!\\nYou "
+"Really delete this wireless network? The deletion cannot be undone! You "
 "might lose access to this device if you are connected via this network."
 msgstr ""
 "确定要删除此无线网络？删除操作无法撤销！\\n删除此无线网络，可能导致无法再访问"
@@ -2567,14 +2587,14 @@ msgid "Really reset all changes?"
 msgstr "确定要放弃所有更改？"
 
 msgid ""
-"Really shut down network?\\nYou might lose access to this device if you are "
+"Really shut down network? You might lose access to this device if you are "
 "connected via this interface."
 msgstr ""
 "确定要关闭此网络？\\n如果您正在使用此接口连接路由器，关闭此网络可能导致连接断"
 "开！"
 
 msgid ""
-"Really shutdown interface \"%s\" ?\\nYou might lose access to this device if "
+"Really shutdown interface \"%s\"? You might lose access to this device if "
 "you are connected via this interface."
 msgstr ""
 "确定要关闭接口 \"%s\"？\\n如果您正在使用此接口连接路由器，关闭此网络可能导致"
@@ -2667,9 +2687,6 @@ msgstr "请求 IPv6 地址"
 msgid "Request IPv6-prefix of length"
 msgstr "请求指定长度的 IPv6 前缀"
 
-msgid "Require TLS"
-msgstr "必须使用 TLS"
-
 msgid "Required"
 msgstr "必须"
 
@@ -2730,7 +2747,16 @@ msgid "Reveal/hide password"
 msgstr "显示/隐藏 密码"
 
 msgid "Revert"
-msgstr "放弃"
+msgstr "恢复"
+
+msgid "Revert changes"
+msgstr "恢复更改"
+
+msgid "Revert request failed with status <code>%h</code>"
+msgstr "恢复请求失败，状态 <code>%h</code>"
+
+msgid "Reverting configuration…"
+msgstr "正在恢复配置..."
 
 msgid "Root"
 msgstr "Root"
@@ -2746,9 +2772,6 @@ msgstr "路由允许的 IP"
 
 msgid "Route type"
 msgstr "路由类型"
-
-msgid "Routed IPv6 prefix for downstream interfaces"
-msgstr "下行接口的路由 IPv6 前缀"
 
 msgid "Router Advertisement-Service"
 msgstr "路由通告服务"
@@ -2772,14 +2795,6 @@ msgstr "文件系统检查"
 
 msgid "SHA256"
 msgstr "SHA256"
-
-msgid ""
-"SIXXS supports TIC only, for static tunnels using IP protocol 41 (RFC4213) "
-"use 6in4 instead"
-msgstr "SIXXS 仅支持 TIC，对于使用 IP 协议 41（RFC4213）的静态隧道，使用 6in4"
-
-msgid "SIXXS-handle[/Tunnel-ID]"
-msgstr "SIXXS-handle[/Tunnel-ID]"
 
 msgid "SNR"
 msgstr "SNR"
@@ -2806,10 +2821,7 @@ msgid "Save"
 msgstr "保存"
 
 msgid "Save & Apply"
-msgstr "保存&应用"
-
-msgid "Save &#38; Apply"
-msgstr "保存&#38;应用"
+msgstr "保存并应用"
 
 msgid "Scan"
 msgstr "扫描"
@@ -2836,17 +2848,6 @@ msgstr "隔离客户端"
 
 msgid "Server Settings"
 msgstr "服务器设置"
-
-msgid "Server password"
-msgstr "服务器密码"
-
-msgid ""
-"Server password, enter the specific password of the tunnel when the username "
-"contains the tunnel ID"
-msgstr "服务器密码，如果用户名包含隧道 ID 则在此填写隧道自己的密码"
-
-msgid "Server username"
-msgstr "服务器用户名"
 
 msgid "Service Name"
 msgstr "服务名"
@@ -2900,6 +2901,9 @@ msgstr "大小"
 msgid "Size (.ipk)"
 msgstr "大小（.ipk）"
 
+msgid "Size of DNS query cache"
+msgstr "DNS 查询缓存的大小"
+
 msgid "Skip"
 msgstr "跳过"
 
@@ -2941,9 +2945,6 @@ msgstr "排序"
 msgid "Source"
 msgstr "源地址"
 
-msgid "Source routing"
-msgstr "源路由"
-
 msgid "Specifies the directory the device is attached to"
 msgstr "指定设备的挂载目录"
 
@@ -2981,6 +2982,9 @@ msgstr "开始"
 
 msgid "Start priority"
 msgstr "启动优先级"
+
+msgid "Starting configuration apply…"
+msgstr "开始应用配置..."
 
 msgid "Startup"
 msgstr "启动项"
@@ -3139,6 +3143,19 @@ msgid "The configuration file could not be loaded due to the following error:"
 msgstr "由于以下错误，配置文件无法被加载："
 
 msgid ""
+"The device could not be reached within %d seconds after applying the pending "
+"changes, which caused the configuration to be rolled back for safety "
+"reasons. If you believe that the configuration changes are correct "
+"nonetheless, perform an unchecked configuration apply. Alternatively, you "
+"can dismiss this warning and edit changes before attempting to apply again, "
+"or revert all pending changes to keep the currently working configuration "
+"state."
+msgstr ""
+"在应用挂起的更改后 %d 秒内无法到达该设备，出于安全原因导致配置回滚。如果您认为配置更改仍"
+"然正确，请执行未选中的配置应用。或者您可以在尝试再次应用之前解除此警告并编辑更改，或者还原"
+"所有未完成的更改以保持当前正在工作的配置状态。"
+
+msgid ""
 "The device file of the memory or partition (<abbr title=\"for example\">e.g."
 "</abbr> <code>/dev/sda1</code>)"
 msgstr "存储器或分区的设备文件，（例如：<code>/dev/sda1</code>）"
@@ -3158,9 +3175,6 @@ msgid ""
 msgstr ""
 "固件已上传，请注意核对文件大小和校验值！<br />点击下面的“继续”开始刷写，刷新"
 "过程中切勿断电！"
-
-msgid "The following changes have been committed"
-msgstr "以下更改已提交"
 
 msgid "The following changes have been reverted"
 msgstr "以下更改已放弃"
@@ -3221,11 +3235,6 @@ msgstr ""
 "钟后即可尝试重新连接到路由。您可能需要更改计算机的 IP 地址以重新连接。"
 
 msgid ""
-"The tunnel end-point is behind NAT, defaults to disabled and only applies to "
-"AYIYA"
-msgstr "隧道端点在 NAT 之后，默认为禁用，仅适用于 AYIYA"
-
-msgid ""
 "The uploaded image file does not contain a supported format. Make sure that "
 "you choose the generic image format for your platform."
 msgstr "不支持所上传的映像文件格式，请选择适合当前平台的通用映像文件。"
@@ -3233,8 +3242,8 @@ msgstr "不支持所上传的映像文件格式，请选择适合当前平台的
 msgid "There are no active leases."
 msgstr "没有已分配的租约。"
 
-msgid "There are no pending changes to apply!"
-msgstr "没有待生效的更改！"
+msgid "There are no changes to apply."
+msgstr "没有待生效的更改。"
 
 msgid "There are no pending changes to revert!"
 msgstr "没有可放弃的更改！"
@@ -3283,8 +3292,8 @@ msgstr "启动脚本插入到 'exit 0' 之前即可随系统启动运行。"
 
 msgid ""
 "This is the local endpoint address assigned by the tunnel broker, it usually "
-"ends with <code>:2</code>"
-msgstr "隧道代理分配的本地终端地址，通常以 <code>:2</code> 结尾"
+"ends with <code>...:2/64</code>"
+msgstr "隧道代理分配的本地终端地址，通常以 <code>...:2/64</code> 结尾"
 
 msgid ""
 "This is the only <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</"
@@ -3373,15 +3382,6 @@ msgstr "隧道接口"
 
 msgid "Tunnel Link"
 msgstr "隧道链接"
-
-msgid "Tunnel broker protocol"
-msgstr "隧道协议"
-
-msgid "Tunnel setup server"
-msgstr "隧道配置服务器"
-
-msgid "Tunnel type"
-msgstr "隧道类型"
 
 msgid "Tx-Power"
 msgstr "传输功率"
@@ -3495,7 +3495,7 @@ msgstr "使用路由表"
 
 msgid ""
 "Use the <em>Add</em> Button to add a new lease entry. The <em>MAC-Address</"
-"em> indentifies the host, the <em>IPv4-Address</em> specifies the fixed "
+"em> identifies the host, the <em>IPv4-Address</em> specifies the fixed "
 "address to use, and the <em>Hostname</em> is assigned as a symbolic name to "
 "the requesting host. The optional <em>Lease time</em> can be used to set non-"
 "standard host-specific lease time, e.g. 12h, 3d or infinite."
@@ -3562,12 +3562,6 @@ msgstr "Vendor"
 msgid "Vendor Class to send when requesting DHCP"
 msgstr "请求 DHCP 时发送的 Vendor Class 选项"
 
-msgid "Verbose"
-msgstr "详细"
-
-msgid "Verbose logging by aiccu daemon"
-msgstr "Aiccu 守护程序详细日志"
-
 msgid "Verify"
 msgstr "验证"
 
@@ -3599,15 +3593,14 @@ msgstr ""
 "WPA 加密需要安装 wpa_supplicant（客户端模式）或安装 hostapd（接入点 AP、点对"
 "点 Ad-Hoc 模式）。"
 
-msgid ""
-"Wait for NTP sync that many seconds, seting to 0 disables waiting (optional)"
-msgstr "NTP 同步前的等待时间，设置为 0 表示不等待（可选）"
-
 msgid "Waiting for changes to be applied..."
 msgstr "正在应用更改..."
 
 msgid "Waiting for command to complete..."
 msgstr "等待命令执行完成..."
+
+msgid "Waiting for configuration to get applied… %ds"
+msgstr "等待应用配置... %d 秒"
 
 msgid "Waiting for device..."
 msgstr "等待设备..."
@@ -3622,12 +3615,6 @@ msgid ""
 "When using a PSK, the PMK can be generated locally without inter AP "
 "communications"
 msgstr "当使用 PSK 时，PMK 可以在没有 AP 间通信的情况下在本地生成"
-
-msgid "Whether to create an IPv6 default route over the tunnel"
-msgstr "是否添加一条通向隧道的 IPv6 默认路由"
-
-msgid "Whether to route only packets from delegated prefixes"
-msgstr "是否仅路由来自分发前缀的数据包"
 
 msgid "Width"
 msgstr "频宽"
@@ -3706,6 +3693,9 @@ msgstr "baseT"
 msgid "bridged"
 msgstr "桥接的"
 
+msgid "create"
+msgstr ""
+
 msgid "create:"
 msgstr "创建："
 
@@ -3770,9 +3760,6 @@ msgstr "kbit/s"
 msgid "local <abbr title=\"Domain Name System\">DNS</abbr> file"
 msgstr "本地 <abbr title=\"Domain Name Syste\">DNS</abbr> 解析文件"
 
-msgid "minimum 1280, maximum 1480"
-msgstr "最小值 1280，最大值 1480"
-
 msgid "minutes"
 msgstr "分钟"
 
@@ -3797,11 +3784,14 @@ msgstr "开"
 msgid "open"
 msgstr "开放式"
 
+msgid "output"
+msgstr ""
+
 msgid "overlay"
 msgstr "覆盖"
 
 msgid "random"
-msgstr ""
+msgstr "随机"
 
 msgid "relay mode"
 msgstr "中继模式"
@@ -3848,119 +3838,8 @@ msgstr "是"
 msgid "« Back"
 msgstr "« 后退"
 
-#~ msgid "Action"
-#~ msgstr "动作"
+#~ msgid "IPv4 WAN Status"
+#~ msgstr "IPv4 WAN 状态"
 
-#~ msgid "Buttons"
-#~ msgstr "按键"
-
-#~ msgid "Handler"
-#~ msgstr "处理程序"
-
-#~ msgid "Maximum hold time"
-#~ msgstr "最大持续时间"
-
-#~ msgid "Minimum hold time"
-#~ msgstr "最低持续时间"
-
-#~ msgid "Path to executable which handles the button event"
-#~ msgstr "处理按键动作的可执行文件路径"
-
-#~ msgid "Specifies the button state to handle"
-#~ msgstr "指定要处理的按键状态"
-
-#~ msgid "This page allows the configuration of custom button actions"
-#~ msgstr "自定义按键动作。"
-
-#~ msgid "Leasetime"
-#~ msgstr "租用时间"
-
-#~ msgid "Optional."
-#~ msgstr "可选。"
-
-#~ msgid "navigation Navigation"
-#~ msgstr "导航"
-
-#~ msgid "skiplink1 Skip to navigation"
-#~ msgstr "skiplink1 跳转到导航"
-
-#~ msgid "skiplink2 Skip to content"
-#~ msgstr "skiplink2 跳到内容"
-
-#~ msgid "AuthGroup"
-#~ msgstr "认证组"
-
-#~ msgid "automatic"
-#~ msgstr "自动"
-
-#~ msgid "AR Support"
-#~ msgstr "AR 支持"
-
-#~ msgid "Atheros 802.11%s Wireless Controller"
-#~ msgstr "Qualcomm/Atheros 802.11%s 无线控制器"
-
-#~ msgid "Background Scan"
-#~ msgstr "后台搜索"
-
-#~ msgid "Compression"
-#~ msgstr "压缩"
-
-#~ msgid "Disable HW-Beacon timer"
-#~ msgstr "停用 HW-Beacon 计时器"
-
-#~ msgid "Do not send probe responses"
-#~ msgstr "不回送探测响应"
-
-#~ msgid "Fast Frames"
-#~ msgstr "快速帧"
-
-#~ msgid "Maximum Rate"
-#~ msgstr "最高速率"
-
-#~ msgid "Minimum Rate"
-#~ msgstr "最低速率"
-
-#~ msgid "Multicast Rate"
-#~ msgstr "多播速率"
-
-#~ msgid "Outdoor Channels"
-#~ msgstr "户外频道"
-
-#~ msgid "Regulatory Domain"
-#~ msgstr "无线网络国家区域"
-
-#~ msgid "Separate WDS"
-#~ msgstr "隔离 WDS"
-
-#~ msgid "Static WDS"
-#~ msgstr "静态 WDS"
-
-#~ msgid "Turbo Mode"
-#~ msgstr "Turbo 模式"
-
-#~ msgid "XR Support"
-#~ msgstr "XR 支持"
-
-#~ msgid "Required. Public key of peer."
-#~ msgstr "必须，Peer 的公钥。"
-
-#~ msgid "An additional network will be created if you leave this checked."
-#~ msgstr "如果选中此复选框，则会创建一个附加网络。"
-
-#~ msgid "An additional network will be created if you leave this unchecked."
-#~ msgstr "取消选中将会另外创建一个新网络，而不会覆盖当前网络设置"
-
-#~ msgid "Join Network: Settings"
-#~ msgstr "加入网络：设置"
-
-#~ msgid "CPU"
-#~ msgstr "CPU"
-
-#~ msgid "Port %d"
-#~ msgstr "端口 %d"
-
-#~ msgid "Port %d is untagged in multiple VLANs!"
-#~ msgstr "端口 %d 在多个 VLAN 中均未标记！"
-
-#~ msgid "VLAN Interface"
-#~ msgstr "VLAN 接口"
+#~ msgid "IPv6 WAN Status"
+#~ msgstr "IPv6 WAN 状态"

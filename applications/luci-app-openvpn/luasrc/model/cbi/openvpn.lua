@@ -26,9 +26,9 @@ uci:foreach( "openvpn_recipes", "openvpn_recipe",
 )
 
 function s.getPID(section) -- Universal function which returns valid pid # or nil
-	local pid = sys.exec("%s | grep -w %s | grep openvpn | grep -v grep | awk '{print $1}'" % { psstring,section} )
-	if pid and #pid > 0 and tonumber(pid) ~= nil then
-		return tonumber(pid)
+	local pid = sys.exec("%s | grep -w '[o]penvpn(%s)'" % { psstring, section })
+	if pid and #pid > 0 then
+		return tonumber(pid:match("^%s*(%d+)"))
 	else
 		return nil
 	end
@@ -56,7 +56,7 @@ function s.create(self, name)
 		luci.cbi.CREATE_PREFIX .. self.config .. "." ..
 		self.sectiontype .. ".text"
 	)
-	if string.len(name)>3 and not name:match("[^a-zA-Z0-9_]") then
+	if #name > 3 and not name:match("[^a-zA-Z0-9_]") then
 		uci:section(
 			"openvpn", "openvpn", name,
 			uci:get_all( "openvpn_recipes", recipe )
@@ -67,9 +67,11 @@ function s.create(self, name)
 		uci:save("openvpn")
 
 		luci.http.redirect( self.extedit:format(name) )
-	else
+	elseif #name > 0 then
 		self.invalid_cts = true
 	end
+
+	return 0
 end
 
 
@@ -103,10 +105,7 @@ function updown.cfgvalue(self, section)
 end
 function updown.write(self, section, value)
 	if self.option == "stop" then
-		local pid = s.getPID(section)
-		if pid ~= nil then
-			sys.process.signal(pid,15)
-		end
+		luci.sys.call("/etc/init.d/openvpn stop %s" % section)
 	else
 		luci.sys.call("/etc/init.d/openvpn start %s" % section)
 	end
@@ -126,5 +125,8 @@ function proto.cfgvalue(self, section)
 	return val or "udp"
 end
 
+function m.on_after_commit(self,map)
+	require("luci.sys").call('/etc/init.d/openvpn reload')
+end
 
 return m
